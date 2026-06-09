@@ -23,5 +23,10 @@ bool validatePassword(const string* password) {
             hasUpper = true;
         }
     }
-    return hasDigit && hasUpper;
+    bool result = false;
+    if (hasDigit&& hasUpper) {
+        result = true;
+    }
+
+    return result;
 }
