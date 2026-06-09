@@ -11,7 +11,7 @@ bool validatePassword(const string* password) {
     }
     bool hasDigit = false;
     bool hasUpper = false;
-    for (size_t i = 0; i < password->length(); ++i) {
+    for (int i = 0; i < password->length(); ++i) {
         char ch = (*password)[i];
         if (ch == ' ') {
             return false;
